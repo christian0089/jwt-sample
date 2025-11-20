@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "jwt")
 public class JwtProperties {
-
+//
     private String secretKey;
     private long accessTokenValiditySeconds;
     private long refreshTokenValiditySeconds;   // ✅ 추가
