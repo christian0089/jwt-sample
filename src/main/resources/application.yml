@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: jwt-sample
+
+server:
+  port: 8089
+
+jwt:
+  secret-key: "change-this-secret-key-to-min-32bytes-length-123456"
+  access-token-validity-seconds: 1800   # 30?
+  refresh-token-validity-seconds: 604800   # 7? (60*60*24*7)
+  issuer: "jwt-sample-auth"
